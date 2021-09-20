@@ -1,0 +1,9 @@
+footer {
+    font-size: clamp(.6rem, 5vw, .9rem);
+    color: rgb(35, 35, 35);
+    min-height: 3rem;
+    background-color: hsl(60, 5%, 92%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
