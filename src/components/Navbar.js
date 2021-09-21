@@ -1,16 +1,21 @@
-import React from 'react'
-
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import React, { useState } from 'react'
+import { Navbar, Nav } from "react-bootstrap"
 
 export default function AppNavbar() {
+
+    const [expanded, setExpanded] = useState(false);
+
     return (
-        <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-            </Nav>
+        <Navbar bg="dark" variant="dark" expand="lg" expanded={expanded}>
+            <Navbar.Brand href="#home">Brand Name</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => expanded ? setExpanded(false) : setExpanded(true)}/>
+            <Navbar.Collapse id="basic-navbar-nav" >
+                <Nav className="mr-auto">
+                    <Nav.Link onClick={() => setExpanded(false)} href="#home">Home</Nav.Link>
+                    <Nav.Link onClick={() => setExpanded(false)} href="#about">About</Nav.Link>
+                    <Nav.Link onClick={() => setExpanded(false)} href="#contact">Contact</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
     )
 }
