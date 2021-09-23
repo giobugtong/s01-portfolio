@@ -14,6 +14,7 @@ export default function AppNavbar() {
                     <Nav.Link onClick={() => setExpanded(false)} href="#home">Home</Nav.Link>
                     <Nav.Link onClick={() => setExpanded(false)} href="#about">About</Nav.Link>
                     <Nav.Link onClick={() => setExpanded(false)} href="#contact">Contact</Nav.Link>
+                    <Nav.Link onClick={() => setExpanded(false)} href="#products">Products</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
