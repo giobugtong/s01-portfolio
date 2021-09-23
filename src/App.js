@@ -14,10 +14,10 @@ export default function App() {
             <Navbar/>
             <Jumbotron/>
             <Container>
-                <Row>
-                    <Col><Card/></Col>
-                    <Col><Card/></Col>
-                    <Col><Card/></Col>
+                <Row className="justify-content-center align-items center">
+                    <Col md={4}><Card/></Col>
+                    <Col md={4}><Card/></Col>
+                    <Col md={4}><Card/></Col>
                 </Row>
             </Container>
             <Footer />
