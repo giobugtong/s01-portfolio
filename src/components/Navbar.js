@@ -6,7 +6,7 @@ export default function AppNavbar() {
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" expanded={expanded}>
+        <Navbar id="navbar" variant="dark" expand="lg" expanded={expanded}>
             <Navbar.Brand href="#home">Brand Name</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => expanded ? setExpanded(false) : setExpanded(true)}/>
             <Navbar.Collapse id="basic-navbar-nav" >
