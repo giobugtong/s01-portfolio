@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 
 export default function Jumbotron() { 
     return (
-        <Card className="my-3 my-md-0">
+        <Card className="my-3 my-md-0 shadow-sm">
             <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
