@@ -8,7 +8,7 @@ export default function Jumbo() {
         <Jumbotron>
             <h1>Welcome to my portfolio!</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi, laudantium voluptatum debitis ratione sapiente nulla corrupti cum adipisci neque corporis eius dolore ullam mollitia, quas laboriosam, nobis iste minima.</p>
-            <Button variant="primary">Learn more</Button>
+            <Button variant="dark">Learn more</Button>
         </Jumbotron>
     )
 }
